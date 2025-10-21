@@ -1,127 +1,64 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Purix - Refrigerantes Saudáveis</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #f7f7f7;
-            color: #333;
-        }
-
-        header {
-            background-color: #4CC9A6;
-            padding: 20px;
-            text-align: center;
-            color: white;
-        }
-
-        nav {
-            background-color: #3EB08E;
-            display: flex;
-            justify-content: center;
-            gap: 25px;
-            padding: 10px;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        section {
-            padding: 40px;
-            max-width: 900px;
-            margin: auto;
-        }
-
-        h2 {
-            color: #3EB08E;
-        }
-
-        .produtos {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .card {
-            background-color: white;
-            border: 1px solid #ccc;
-            width: 250px;
-            border-radius: 10px;
-            padding: 15px;
-            text-align: center;
-        }
-
-        footer {
-            background-color: #3EB08E;
-            color: white;
-            text-align: center;
-            padding: 10px;
-        }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PURIX — Inovação em Refrigerantes Saudáveis</title>
+<link rel="stylesheet" href="css/style.css">
+<meta name="description" content="Purix — refrigerantes saudáveis com ingredientes naturais e tecnologia inovadora.">
 </head>
-<body>
-
-<header>
-    <h1>PURIX</h1>
-    <p>O sabor que refresca com saúde!</p>
+<body class="theme-futuristic">
+<header class="site-header">
+<div class="container header-inner">
+<a href="index.html" class="brand"><img src="assets/logo.svg" alt="Purix" class="logo"> <span class="brand-name">PURIX</span></a>
+<nav class="main-nav">
+<a href="index.html">Home</a>
+<a href="products.html">Produtos</a>
+<a href="about.html">Sobre</a>
+<a href="contact.html">Contato</a>
+</nav>
+</div>
 </header>
 
-<nav>
-    <a href="#sobre">Sobre</a>
-    <a href="#produtos">Produtos</a>
-    <a href="#missao">Missão</a>
-    <a href="#contato">Contato</a>
-</nav>
 
-<section id="sobre">
-    <h2>Sobre a Purix</h2>
-    <p>A Purix é uma empresa inovadora que cria refrigerantes naturais, com ingredientes selecionados e zero aditivos nocivos. Nosso objetivo é oferecer sabor, bem-estar e uma nova forma de se refrescar, sem culpa e com muito prazer.</p>
+<main>
+<section class="hero">
+<div class="container hero-grid">
+<div class="hero-text">
+<h1>Refrigerantes saudáveis, tecnologia de ponta.</h1>
+<p>Purix combina ingredientes naturais com um processo inovador para entregar refrescância sem comprometer sua saúde.</p>
+<div class="cta-row">
+<a class="btn primary" href="products.html">Conheça os produtos</a>
+<a class="btn outline" href="about.html">Nossa tecnologia</a>
+</div>
+</div>
+<div class="hero-image">
+<!-- Foto real do produto (Unsplash) -->
+<img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=800&q=80" alt="Latas Purix" loading="lazy">
+</div>
+</div>
 </section>
 
-<section id="produtos">
-    <h2>Nossos Produtos</h2>
-    <div class="produtos">
-        <div class="card">
-            <h3>Purix Limão</h3>
-            <p>Refrescante, leve e com 80% menos açúcar.</p>
-        </div>
-        <div class="card">
-            <h3>Purix Frutas Vermelhas</h3>
-            <p>Rica em antioxidantes e sabor marcante.</p>
-        </div>
-        <div class="card">
-            <h3>Purix Citrus</h3>
-            <p>Combinação deliciosa de laranja e tangerina.</p>
-        </div>
-    </div>
+
+<section class="features container">
+<div class="feature">
+<h3>Zero aditivos nocivos</h3>
+<p>Formulamos sabores com adoçantes naturais aprovados e menor carga de açúcar.</p>
+</div>
+<div class="feature">
+<h3>Processo sustentável</h3>
+<p>Embalagens recicláveis e produção com menor consumo energético.</p>
+</div>
+<div class="feature">
+<h3>Testes de qualidade</h3>
+<p>Laboratório próprio garante pureza e consistência do sabor.</p>
+</div>
 </section>
 
-<section id="missao">
-    <h2>Nosso Propósito</h2>
-    <p>Transformar o mercado de bebidas, levando saúde e sabor para milhões de pessoas, sem abrir mão de qualidade, responsabilidade ambiental e ingredientes naturais.</p>
-</section>
 
-<section id="contato">
-    <h2>Contato</h2>
-    <p>Email: contato@purix.com.br</p>
-    <p>Instagram: @purix.oficial</p>
-</section>
-
-<footer>
-    <p>Purix © 2025 - Todos os direitos reservados</p>
-</footer>
-
-</body>
+<section class="highlights container">
+<h2>Destaques</h2>
+<div class="cards">
+<article class="card">
+<img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80" alt="Purix Limão" loading="lazy">
 </html>
