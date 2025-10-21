@@ -1,130 +1,98 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PURIX — Refrigerantes Saudáveis</title>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Purix — Refrigerante Sem Açúcar</title>
+  <meta name="description" content="Purix, o refrigerante sem açúcar, refrescante e cheio de sabor." />
+  <meta name="author" content="Purix" />
+  <link rel="icon" href="favicon.ico">
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;color:#111}
+    a{text-decoration:none;color:inherit}
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+    .logo{font-weight:700;font-size:1.125rem}
+    nav ul{display:flex;gap:18px;list-style:none}
+    nav a{font-weight:600;opacity:.85}
+    .hero{padding:48px 0;text-align:center}
+    .eyebrow{display:inline-block;background:#e6f6ff;color:#006aa6;padding:6px 10px;border-radius:999px;font-weight:700;margin-bottom:16px}
+    h1{font-size:2rem;line-height:1.2;margin-bottom:12px}
+    p.lead{color:#444;margin-bottom:18px}
+    .cta-row{display:flex;gap:12px;justify-content:center}
+    .btn{display:inline-block;padding:12px 18px;border-radius:10px;font-weight:700;cursor:pointer}
+    .btn-primary{background:#0077cc;color:white}
+    .btn-outline{border:2px solid #0077cc;color:#0077cc;background:transparent}
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:36px 0}
+    .card{padding:18px;border-radius:10px;background:#fff;border:1px solid #eee;text-align:center}
+    .card h3{margin-bottom:8px;font-size:1rem}
+    .card p{color:#555;font-size:0.95rem}
+    section{padding:28px 0}
+    footer{padding:20px 0;border-top:1px solid #eee;margin-top:30px;color:#666;text-align:center}
+    @media (max-width:900px){
+      .features{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width:520px){
+      .features{grid-template-columns:1fr}
+      h1{font-size:1.5rem}
+    }
+    .muted{color:#6b7280}
+  </style>
 </head>
 <body>
-
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="brand">
-        <img src="assets/logo.svg" alt="Purix Logo" class="logo">
-        <span class="brand-name">PURIX</span>
-      </div>
-      <nav class="main-nav">
-        <a href="#sobre">Sobre</a>
-        <a href="#sabores">Sabores</a>
-        <a href="#beneficios">Benefícios</a>
-        <a href="#contato">Contato</a>
-      </nav>
-    </div>
+  <header class="container">
+    <div class="logo">Purix<span style="color:#0077cc">.</span></div>
+    <nav>
+      <ul>
+        <li><a href="#features">Benefícios</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- HERO -->
-  <section id="hero" class="hero">
-    <div class="container hero-grid">
-      <div class="hero-text">
-        <h1>Purix — O refrigerante que faz bem pra você.</h1>
-        <p class="lead">Refresque seu dia com sabor natural, frutas frescas e ingredientes saudáveis.</p>
-        <a class="btn primary" href="#sabores">Conheça os Sabores</a>
+  <main class="container">
+    <section class="hero" id="home">
+      <span class="eyebrow">Novo lançamento</span>
+      <h1>Purix — Refrigerante sem açúcar, refrescante e cheio de sabor.</h1>
+      <p class="lead">Um refri moderno, zero açúcar e feito com ingredientes selecionados para você aproveitar sem culpa.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#features">Conheça os benefícios</a>
       </div>
-      <div class="hero-media">
-        <img src="https://images.unsplash.com/photo-1544025162-1f5b2b7d2d82?auto=format&fit=crop&w=1000&q=80" alt="Garrafa Purix com frutas frescas">
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- SOBRE -->
-  <section id="sobre" class="section panel">
-    <div class="container split">
-      <div class="text">
-        <h2>Sobre a Purix</h2>
-        <p>Na Purix, acreditamos que refrigerante pode ser delicioso e saudável. Usamos apenas ingredientes naturais, sucos de frutas e adoçantes leves.</p>
-        <p class="muted">Produção sustentável e embalagens ecológicas.</p>
+    <section id="features">
+      <div class="features">
+        <div class="card">
+          <h3>Zero Açúcar</h3>
+          <p>Todo o frescor e sabor, sem adição de açúcares.</p>
+        </div>
+        <div class="card">
+          <h3>Ingredientes Naturais</h3>
+          <p>Feito com extratos e aromas naturais, sem corantes artificiais.</p>
+        </div>
+        <div class="card">
+          <h3>Baixas Calorias</h3>
+          <p>Leve, saudável e perfeito para qualquer momento do seu dia.</p>
+        </div>
       </div>
-      <div class="media">
-        <img src="https://images.unsplash.com/photo-1506806732259-39c2d0268443?auto=format&fit=crop&w=900&q=80" alt="Frutas frescas">
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- SABORES -->
-  <section id="sabores" class="section">
-    <div class="container">
-      <h2>Nossos Sabores</h2>
-      <div class="cards grid-3">
-        <article class="card">
-          <img src="https://images.unsplash.com/photo-1562887280-1b6e7a3e8bdb?auto=format&fit=crop&w=800&q=80" alt="Purix Limão">
-          <h3>Limão</h3>
-          <p>Cítrico, refrescante e baixo em açúcar.</p>
-        </article>
-        <article class="card">
-          <img src="https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?auto=format&fit=crop&w=800&q=80" alt="Purix Frutas Vermelhas">
-          <h3>Frutas Vermelhas</h3>
-          <p>Sabor suave, antioxidantes naturais.</p>
-        </article>
-        <article class="card">
-          <img src="https://images.unsplash.com/photo-1497534446932-c925b458314e?auto=format&fit=crop&w=800&q=80" alt="Purix Citrus">
-          <h3>Citrus</h3>
-          <p>Laranja e tangerina, sabor complexo e refrescante.</p>
-        </article>
-      </div>
-    </div>
-  </section>
+    <section>
+      <h2>Por que escolher Purix?</h2>
+      <p class="muted">Porque ele combina saúde, sabor e sustentabilidade em uma só lata.</p>
+      <ul style="margin-top:12px">
+        <li>Zero açúcar e baixas calorias</li>
+        <li>Embalagem reciclável</li>
+        <li>Sabor testado e aprovado</li>
+      </ul>
+    </section>
+  </main>
 
-  <!-- BENEFÍCIOS -->
-  <section id="beneficios" class="section panel-alt">
-    <div class="container benefits-grid">
-      <div class="benefit">
-        <h4>Menos açúcar</h4>
-        <p>Reduzimos calorias sem perder sabor.</p>
-      </div>
-      <div class="benefit">
-        <h4>Ingredientes reais</h4>
-        <p>Suco e extratos naturais, sem químicos artificiais.</p>
-      </div>
-      <div class="benefit">
-        <h4>Sustentabilidade</h4>
-        <p>Embalagens recicláveis e produção consciente.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTATO -->
-  <section id="contato" class="section panel">
-    <div class="container contact-wrap">
-      <div class="contact-left">
-        <h2>Fale com a Purix</h2>
-        <p>Email, telefone ou WhatsApp — queremos te ouvir!</p>
-        <ul class="contact-info">
-          <li>Email: contato@purix.com.br</li>
-          <li>Telefone: +55 11 99999-9999</li>
-        </ul>
-      </div>
-      <form class="contact-form" action="#" method="post" onsubmit="alert('Formulário demo'); return false;">
-        <label>Nome<input type="text" name="name" required></label>
-        <label>Email<input type="email" name="email" required></label>
-        <label>Mensagem<textarea name="message" rows="4" required></textarea></label>
-        <button class="btn primary" type="submit">Enviar</button>
-      </form>
-    </div>
-  </section>
-
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <span>© Purix 2025</span>
-      <span>O sabor da fruta, a pureza da saúde.</span>
-    </div>
+  <footer class="container">
+    <div class="muted">© 2025 Purix. Todos os direitos reservados. Feito com ♥</div>
   </footer>
-
-  <!-- WhatsApp -->
-  <a class="whatsapp-fab" href="https://wa.me/5511999999999?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20a%20Purix" target="_blank">WhatsApp</a>
-
 </body>
+</html>
 </html>
 
 
