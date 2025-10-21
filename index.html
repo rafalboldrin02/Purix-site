@@ -1,129 +1,91 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Purix - Refrigerantes Saudáveis</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #f7f7f7;
-            color: #333;
-        }
-
-        header {
-            background-color: #4CC9A6;
-            padding: 20px;
-            text-align: center;
-            color: white;
-        }
-
-        nav {
-            background-color: #3EB08E;
-            display: flex;
-            justify-content: center;
-            gap: 25px;
-            padding: 10px;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        section {
-            padding: 40px;
-            max-width: 900px;
-            margin: auto;
-        }
-
-        h2 {
-            color: #3EB08E;
-        }
-
-        .produtos {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .card {
-            background-color: white;
-            border: 1px solid #ccc;
-            width: 250px;
-            border-radius: 10px;
-            padding: 15px;
-            text-align: center;
-        }
-
-        footer {
-            background-color: #3EB08E;
-            color: white;
-            text-align: center;
-            padding: 10px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Purix - Refrigerantes Saudáveis</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <h1>PURIX</h1>
-    <p>O sabor que refresca com saúde!</p>
+<header class="fade-in">
+  <h1>PURIX</h1>
+  <p>O sabor que refresca com saúde!</p>
 </header>
 
-<nav>
-    <a href="#sobre">Sobre</a>
-    <a href="#produtos">Produtos</a>
-    <a href="#missao">Missão</a>
-    <a href="#contato">Contato</a>
+<nav class="fade-in">
+  <a href="#sobre">Sobre</a>
+  <a href="#produtos">Produtos</a>
+  <a href="#missao">Missão</a>
+  <a href="#contato">Contato</a>
 </nav>
 
-<section id="sobre">
-    <h2>Sobre a Purix</h2>
-    <p>A Purix é uma empresa inovadora que cria refrigerantes naturais, com ingredientes selecionados e zero aditivos nocivos. Nosso objetivo é oferecer sabor, bem-estar e uma nova forma de se refrescar, sem culpa e com muito prazer.</p>
+<section id="sobre" class="fade-in-up">
+  <h2>Sobre a Purix</h2>
+  <p>A Purix é uma empresa inovadora que cria refrigerantes naturais, com ingredientes selecionados e zero aditivos nocivos. Nosso objetivo é oferecer sabor, bem-estar e uma nova forma de se refrescar, sem culpa e com muito prazer.</p>
 </section>
 
-<section id="produtos">
-    <h2>Nossos Produtos</h2>
-    <div class="produtos">
-        <div class="card">
-            <h3>Purix Limão</h3>
-            <p>Refrescante, leve e com 80% menos açúcar.</p>
-        </div>
-        <div class="card">
-            <h3>Purix Frutas Vermelhas</h3>
-            <p>Rica em antioxidantes e sabor marcante.</p>
-        </div>
-        <div class="card">
-            <h3>Purix Citrus</h3>
-            <p>Combinação deliciosa de laranja e tangerina.</p>
-        </div>
+<section id="produtos" class="fade-in-up">
+  <h2>Nossos Produtos</h2>
+  <div class="produtos">
+    <div class="card fade-in-left">
+      <img src="https://images.unsplash.com/photo-1562887280-1b6e7a3e8bdb?auto=format&fit=crop&w=400&q=80" alt="Purix Limão">
+      <h3>Purix Limão</h3>
+      <p>Refrescante, leve e com 80% menos açúcar.</p>
     </div>
+    <div class="card fade-in-up">
+      <img src="https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?auto=format&fit=crop&w=400&q=80" alt="Purix Frutas Vermelhas">
+      <h3>Purix Frutas Vermelhas</h3>
+      <p>Rica em antioxidantes e sabor marcante.</p>
+    </div>
+    <div class="card fade-in-right">
+      <img src="https://images.unsplash.com/photo-1497534446932-c925b458314e?auto=format&fit=crop&w=400&q=80" alt="Purix Citrus">
+      <h3>Purix Citrus</h3>
+      <p>Combinação deliciosa de laranja e tangerina.</p>
+    </div>
+  </div>
 </section>
 
-<section id="missao">
-    <h2>Nosso Propósito</h2>
-    <p>Transformar o mercado de bebidas, levando saúde e sabor para milhões de pessoas, sem abrir mão de qualidade, responsabilidade ambiental e ingredientes naturais.</p>
+<section id="missao" class="fade-in-up">
+  <h2>Nosso Propósito</h2>
+  <p>Transformar o mercado de bebidas, levando saúde e sabor para milhões de pessoas, sem abrir mão de qualidade, responsabilidade ambiental e ingredientes naturais.</p>
 </section>
 
-<section id="contato">
-    <h2>Contato</h2>
-    <p>Email: contato@purix.com.br</p>
-    <p>Instagram: @purix.oficial</p>
+<section id="contato" class="fade-in-up">
+  <h2>Contato</h2>
+  <p>Email: contato@purix.com.br</p>
+  <p>Instagram: @purix.oficial</p>
 </section>
 
-<footer>
-    <p>Purix © 2025 - Todos os direitos reservados</p>
+<footer class="fade-in">
+  <p>Purix © 2025 - Todos os direitos reservados</p>
 </footer>
+
+<!-- WhatsApp Flutuante -->
+<a class="whatsapp-fab" href="https://wa.me/5511999999999" target="_blank">WhatsApp</a>
+
+<script>
+  // Função simples para adicionar animações ao rolar
+  const faders = document.querySelectorAll('.fade-in, .fade-in-up, .fade-in-left, .fade-in-right');
+
+  const appearOptions = {
+    threshold: 0.2,
+    rootMargin: "0px 0px -50px 0px"
+  };
+
+  const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll){
+    entries.forEach(entry => {
+      if(!entry.isIntersecting) return;
+      entry.target.classList.add('appear');
+      appearOnScroll.unobserve(entry.target);
+    });
+  }, appearOptions);
+
+  faders.forEach(fader => {
+    appearOnScroll.observe(fader);
+  });
+</script>
 
 </body>
 </html>
-
-
